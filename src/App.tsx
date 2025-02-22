@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function App() {
-  const [count] = useState(0);
+  const [count] = useState(-1);
 
   return (
     <div className="App">
