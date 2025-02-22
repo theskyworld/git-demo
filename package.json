@@ -1,0 +1,42 @@
+{
+  "name": "react-scss-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.4",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.4.3",
+    "sass": "^1.85.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "prettier": {
+    "configPath": "./.prettierrc.cjs"
+  },
+  "lint-staged": {
+    "*.{js,html,css,tsx,scss,json,ts}": "npx prettier --write",
+    "*.{js,tsx,ts}": "npx eslint"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
