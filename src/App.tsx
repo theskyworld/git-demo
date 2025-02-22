@@ -5,7 +5,8 @@ function App() {
 
   return (
     <div className="App">
-      <p className="main-text">{count}</p>
+      <p>{count}</p>
+      <p className="main-text">App</p>
     </div>
   );
 }
