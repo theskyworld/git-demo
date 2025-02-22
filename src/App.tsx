@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="App">
-      <p className="sain-text">{count}</p>
+      <p className="main-text">{count}</p>
     </div>
   );
 }
